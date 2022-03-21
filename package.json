@@ -1,0 +1,23 @@
+{
+  "name": "testing-js-apps-book",
+  "version": "1.0.0",
+  "description": "Notes and code samples from 'Testing JavaScript Applications' (Manning publications)",
+  "main": "Cart.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "devDependencies": {
+    "jest": "27.5.1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/chaitanya608/testing-js-apps-book.git"
+  },
+  "keywords": [],
+  "author": "Chaitanya V",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/chaitanya608/testing-js-apps-book/issues"
+  },
+  "homepage": "https://github.com/chaitanya608/testing-js-apps-book#readme"
+}
