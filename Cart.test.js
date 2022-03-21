@@ -5,8 +5,9 @@ const Cart = require("./Cart");
 
 const cart = new Cart();
 cart.addToCart("cheesecake");
+cart.removeFromCart("cheesecake");
 
-const assertionResult = assert.deepStrictEqual(cart.items, ["cheesecake"]);
+const assertionResult = assert.deepStrictEqual(cart.items, []);
 
 if (!assertionResult) {
 	console.log("The addToCart function can add an item to the cart");
