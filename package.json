@@ -19,5 +19,9 @@
   "bugs": {
     "url": "https://github.com/chaitanya608/testing-js-apps-book/issues"
   },
-  "homepage": "https://github.com/chaitanya608/testing-js-apps-book#readme"
+  "homepage": "https://github.com/chaitanya608/testing-js-apps-book#readme",
+  "dependencies": {
+    "knex": "^1.0.4",
+    "sqlite3": "^5.0.2"
+  }
 }
