@@ -1,16 +1,17 @@
-// deepStrictEqual takes either a string or an error object as third argument and returns undefined if assertion is passed and error if failed.
-
 const assert = require("assert");
 const Cart = require("./Cart");
 
-const cart = new Cart();
-cart.addToCart("cheesecake");
-cart.removeFromCart("cheesecake");
+test("The addToCart function can add an ite mto the cart", () => {
+	const cart = new Cart();
+	cart.addToCart("cheesecake");
 
-const assertionResult = assert.deepStrictEqual(cart.items, []);
+	assert.deepStrictEqual(cart.items, ["cheesecake"]);
+});
 
-if (!assertionResult) {
-	console.log("The addToCart function can add an item to the cart");
-} else {
-	console.log(assertionResult);
-}
+test("The removeFromCart function can remove an item from the cart", () => {
+	const cart = new Cart();
+	cart.addToCart("cheesecake");
+	cart.removeFromCart("cheesecake");
+
+	assert.deepStrictEqual(cart.items, []);
+});
